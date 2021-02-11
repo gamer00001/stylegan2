@@ -130,6 +130,8 @@ Run 'python %(prog)s <subcommand> --help' for subcommand help.''',
     e = cm.Experiment("Your API KEY")
     # This line will used for logging images
     e.log_image("Your Data Set Path")
+    # This will log all the information present in the dataset
+    e.log_dataset_info
 
     subparsers = parser.add_subparsers(help='Sub-commands', dest='command')
 
